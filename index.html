@@ -1,407 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>DZDT | Algeria's Digital Token</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-
-background:#07111f;
-color:white;
-
-}
-
-nav{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:18px 8%;
-
-background:rgba(0,0,0,.45);
-
-backdrop-filter:blur(10px);
-
-z-index:999;
-
-}
-
-nav h2{
-
-color:#00ff88;
-
-}
-
-nav ul{
-
-display:flex;
-list-style:none;
-
-}
-
-nav ul li{
-
-margin-left:25px;
-
-}
-
-nav ul li a{
-
-color:white;
-text-decoration:none;
-
-}
-
-.buy{
-
-background:#00ff88;
-padding:10px 20px;
-border-radius:8px;
-color:black;
-font-weight:bold;
-text-decoration:none;
-
-}
-
-.hero{
-
-min-height:100vh;
-
-display:flex;
-flex-direction:column;
-
-justify-content:center;
-align-items:center;
-
-text-align:center;
-
-padding:100px 20px;
-
-}
-
-.logo{
-
-width:180px;
-
-margin-bottom:30px;
-
-border-radius:50%;
-
-box-shadow:0 0 40px rgba(0,255,136,.4);
-
-}
-
-h1{
-
-font-size:70px;
-
-color:#00ff88;
-
-margin-bottom:15px;
-
-}
-
-.hero h3{
-
-font-size:28px;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-max-width:800px;
-
-font-size:20px;
-
-line-height:1.7;
-
-margin-bottom:40px;
-
-}
-
-.buttons{
-
-display:flex;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-}
-
-.btn{
-
-background:#00ff88;
-
-padding:18px 35px;
-
-border-radius:10px;
-
-font-weight:bold;
-
-text-decoration:none;
-
-color:black;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-transform:scale(1.05);
-
-}
-
-button{
-
-padding:18px 35px;
-
-background:#222;
-
-color:white;
-
-border:none;
-
-border-radius:10px;
-
-cursor:pointer;
-
-font-size:16px;
-
-}
-
-section{
-
-padding:90px 10%;
-
-}
-
-.section-title{
-
-text-align:center;
-
-font-size:45px;
-
-margin-bottom:50px;
-
-color:#00ff88;
-
-}
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
-}
-
-.card{
-
-background:#101d31;
-
-padding:30px;
-
-border-radius:15px;
-
-transition:.3s;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-.contract{
-
-background:#101d31;
-
-padding:25px;
-
-border-radius:12px;
-
-word-break:break-all;
-
-font-size:18px;
-
-margin:20px 0;
-
-}
-
-.utility{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:20px;
-
-}
-
-.utility div{
-
-background:#101d31;
-
-padding:30px;
-
-border-radius:15px;
-
-text-align:center;
-
-font-size:20px;
-
-}
-
-.social{
-
-display:flex;
-
-justify-content:center;
-
-gap:20px;
-
-flex-wrap:wrap;
-
-margin-top:30px;
-
-}
-
-.social a{
-
-background:#00ff88;
-
-padding:15px 25px;
-
-border-radius:8px;
-
-text-decoration:none;
-
-color:black;
-
-font-weight:bold;
-
-}
-
-footer{
-
-background:#020913;
-
-padding:40px;
-
-text-align:center;
-
-margin-top:80px;
-
-}
-
-@media(max-width:700px){
-
-nav ul{
-
-display:none;
-
-}
-
-h1{
-
-font-size:45px;
-
-}
-
-.hero h3{
-
-font-size:22px;
-
-}
-
-.hero p{
-
-font-size:17px;
-
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
+<div class="bg"></div>
+
+<div class="particles"></div>
+
 <nav>
+
+<div class="logo-area">
+
+<img src="logo.png">
 
 <h2>DZDT</h2>
 
+</div>
+
 <ul>
+
+<li><a href="#">Home</a></li>
 
 <li><a href="#about">About</a></li>
 
-<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#tokenomics">Tokenomics</a></li>
 
-<li><a href="#utility">Utility</a></li>
-
-<li><a href="#contract">Contract</a></li>
+<li><a href="#faq">FAQ</a></li>
 
 </ul>
 
-<a class="buy" target="_blank"
+<a
+class="buy"
+
+target="_blank"
+
 href="https://pump.fun/coin/CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump">
 
-Buy
+Buy Now
 
 </a>
 
 </nav>
 
-<header class="hero">
+<section class="hero">
 
-<img src="logo.png" class="logo">
+<div class="left">
 
-<h1>DZDT</h1>
+<span class="badge">
 
-<h3>
+🇩🇿 Built For Algeria
 
-Built for Algeria. Powered by Blockchain.
+</span>
 
-</h3>
+<h1>
+
+The Future of
+
+<span>Digital Commerce</span>
+
+</h1>
 
 <p>
 
-DZDT is Algeria's community-powered utility token designed to accelerate blockchain adoption and support the nation's digital marketplace. Our vision is to empower businesses, entrepreneurs, developers, and consumers through secure blockchain technology and future Web3 innovation.
+DZDT is Algeria's community-powered blockchain token designed to connect businesses,
+developers and consumers through secure payments,
+marketplace rewards and future Web3 innovation.
 
 </p>
 
 <div class="buttons">
 
-<a class="btn"
+<a
+
+class="primary"
 
 target="_blank"
 
@@ -419,129 +110,146 @@ Copy Contract
 
 </div>
 
-</header>
-
-<section id="contract">
-
-<h2 class="section-title">
-
-Official Contract
-
-</h2>
-
 <div class="contract">
 
 CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump
 
 </div>
 
-<center>
+</div>
 
-<button onclick="copyContract()">
+<div class="right">
 
-Copy Address
+<div class="coin">
 
-</button>
+<img src="logo.png">
 
-</center>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="card">
+
+<h3>
+
+<i class="fa-solid fa-link"></i>
+
+Network
+
+</h3>
+
+<p>Solana</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+<i class="fa-solid fa-coins"></i>
+
+Type
+
+</h3>
+
+<p>Utility Token</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Country
+
+</h3>
+
+<p>Algeria</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+
+<i class="fa-solid fa-users"></i>
+
+Community
+
+</h3>
+
+<p>Growing</p>
+
+</div>
 
 </section>
 
 <section id="about">
 
-<h2 class="section-title">
+<h2>
 
 About DZDT
 
 </h2>
 
-<p style="text-align:center;font-size:20px;line-height:1.8;max-width:900px;margin:auto;">
+<p>
 
-DZDT is a blockchain utility token created to accelerate Algeria's digital transformation. It aims to support secure digital payments, marketplace rewards, business incentives, and future decentralized applications built for Algeria's growing digital economy.
+DZDT is a blockchain-powered utility token built to accelerate Algeria's digital transformation.
+Our goal is to support secure payments,
+local marketplaces,
+customer rewards,
+business incentives,
+and future Web3 services for individuals and companies.
 
 </p>
 
 </section>
 
-<section id="roadmap">
+<section id="tokenomics">
 
-<h2 class="section-title">
+<h2>
 
-Roadmap
+Tokenomics
 
 </h2>
 
-<div class="cards">
+<div class="token-grid">
 
-<div class="card">
+<div>
 
-<h2>Phase 1</h2>
+<h4>Network</h4>
 
-<br>
-
-✔ Launch Token
-
-<br><br>
-
-✔ Website
-
-<br><br>
-
-✔ Community
+<span>Solana</span>
 
 </div>
 
-<div class="card">
+<div>
 
-<h2>Phase 2</h2>
+<h4>Token</h4>
 
-<br>
-
-Marketplace
-
-<br><br>
-
-Marketing
-
-<br><br>
-
-Partnerships
+<span>DZDT</span>
 
 </div>
 
-<div class="card">
+<div>
 
-<h2>Phase 3</h2>
+<h4>Taxes</h4>
 
-<br>
-
-Payments
-
-<br><br>
-
-Rewards
-
-<br><br>
-
-Mobile App
+<span>0%</span>
 
 </div>
 
-<div class="card">
+<div>
 
-<h2>Phase 4</h2>
+<h4>Liquidity</h4>
 
-<br>
-
-Governance
-
-<br><br>
-
-Expansion
-
-<br><br>
-
-Web3 Ecosystem
+<span>Pump.fun</span>
 
 </div>
 
@@ -549,91 +257,39 @@ Web3 Ecosystem
 
 </section>
 
-<section id="utility">
+<section id="faq">
 
-<h2 class="section-title">
+<h2>
 
-Token Utility
-
-</h2>
-
-<div class="utility">
-
-<div>
-
-💳
-
-<h3>
-
-Secure Payments
-
-</h3>
-
-</div>
-
-<div>
-
-🏪
-
-<h3>
-
-Marketplace Rewards
-
-</h3>
-
-</div>
-
-<div>
-
-🤝
-
-<h3>
-
-Business Incentives
-
-</h3>
-
-</div>
-
-<div>
-
-🚀
-
-<h3>
-
-Future Web3 Services
-
-</h3>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="section-title">
-
-Join The Community
+Frequently Asked Questions
 
 </h2>
 
-<div class="social">
+<div class="faq">
 
-<a href="#">Telegram</a>
+<div>
 
-<a href="#">X (Twitter)</a>
+<h3>What is DZDT?</h3>
 
-<a href="https://github.com/dzdt7/DZDt" target="_blank">GitHub</a>
+<p>A blockchain utility token for Algeria.</p>
 
-<a target="_blank"
+</div>
 
-href="https://pump.fun/coin/CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump">
+<div>
 
-Pump.fun
+<h3>How do I buy?</h3>
 
-</a>
+<p>Purchase it on Pump.fun using a Solana wallet.</p>
+
+</div>
+
+<div>
+
+<h3>Which network?</h3>
+
+<p>Solana.</p>
+
+</div>
 
 </div>
 
@@ -641,37 +297,33 @@ Pump.fun
 
 <footer>
 
+<img src="logo.png">
+
 <h2>DZDT</h2>
 
-<br>
-
 <p>
 
-Built for Algeria • Powered by Blockchain
+Built For Algeria • Powered By Blockchain
 
 </p>
 
-<br>
+<div class="socials">
 
-<p>
+<a href="#"><i class="fab fa-x-twitter"></i></a>
 
-© 2026 DZDT. All Rights Reserved.
+<a href="#"><i class="fab fa-telegram"></i></a>
 
-</p>
+<a href="https://github.com/dzdt7/DZDt">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+</div>
 
 </footer>
 
-<script>
-
-function copyContract(){
-
-navigator.clipboard.writeText("CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump");
-
-alert("Contract Address Copied!");
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 
