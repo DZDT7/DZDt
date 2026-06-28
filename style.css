@@ -1410,3 +1410,112 @@ Tokenomics
     font-size:18px;
 
 }
+/*==========================
+FAQ
+==========================*/
+
+.faq-section{
+
+padding:120px 0;
+
+}
+
+.faq{
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.faq-item{
+
+background:#101a2d;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:18px;
+
+margin-bottom:20px;
+
+overflow:hidden;
+
+transition:.3s;
+
+}
+
+.faq-item:hover{
+
+border-color:#00ff88;
+
+box-shadow:0 0 25px rgba(0,255,136,.15);
+
+}
+
+.faq-question{
+
+width:100%;
+
+background:none;
+
+border:none;
+
+color:white;
+
+padding:25px;
+
+font-size:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+.faq-question i{
+
+color:#00ff88;
+
+transition:.35s;
+
+}
+
+.faq-answer{
+
+max-height:0;
+
+overflow:hidden;
+
+transition:max-height .45s ease;
+
+padding:0 25px;
+
+}
+
+.faq-answer p{
+
+padding:20px 0;
+
+line-height:1.8;
+
+color:#cfd8dc;
+
+}
+
+.faq-item.active .faq-answer{
+
+max-height:250px;
+
+}
+
+.faq-item.active i{
+
+transform:rotate(45deg);
+
+}
