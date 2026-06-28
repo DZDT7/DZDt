@@ -404,10 +404,14 @@ Hero Image
 .coin-glow img{
 
     width:220px;
+    height:auto;
+
+    object-fit:contain;
 
     filter:drop-shadow(0 0 35px #00ff88);
 
 }
+
 
 @keyframes float{
 
