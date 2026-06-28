@@ -13,7 +13,7 @@ function copyContract() {
     alert("Contract copied!");
 }
 
-const faqItems = document.querySelectorAll(".faq-item");
+const faqItems=document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item=>{
 
