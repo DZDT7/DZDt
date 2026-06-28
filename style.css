@@ -12,7 +12,9 @@ Part 1
 html{
     scroll-behavior:smooth;
 }
-
+body{
+    background:red !important;
+}
 body{
 
     font-family:'Poppins',sans-serif;
