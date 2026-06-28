@@ -868,7 +868,12 @@ Hero Image
     justify-content:center;
 
 }
-
+.hero-right img{
+    width:280px;
+    max-width:100%;
+    height:auto;
+    display:block;
+}
 .coin-glow{
 
     width:430px;
