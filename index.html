@@ -4,44 +4,62 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>DZDT | Algeria's Digital Token</title>
+<title>DZDT | Algeria's Digital Utility Token</title>
 
-<link rel="stylesheet" href="style.css">
+<meta name="description"
+content="DZDT is Algeria's community-powered blockchain token for digital payments, marketplaces and Web3 innovation.">
 
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+<meta name="keywords"
+content="DZDT, Algeria, Blockchain, Solana, Crypto, Token, Web3">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
 rel="stylesheet">
 
 <link
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+<link
+href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<div class="bg"></div>
+<div id="particles-js"></div>
 
-<div class="particles"></div>
+<!-- ================= NAVBAR ================= -->
 
 <nav>
 
-<div class="logo-area">
+<div class="container nav-container">
+
+<a href="#" class="logo">
 
 <img src="logo.png">
 
-<h2>DZDT</h2>
+<span>DZDT</span>
 
-</div>
+</a>
 
-<ul>
+<ul class="nav-links">
 
-<li><a href="#">Home</a></li>
+<li><a href="#home">Home</a></li>
 
 <li><a href="#about">About</a></li>
+
+<li><a href="#market">Market</a></li>
 
 <li><a href="#tokenomics">Tokenomics</a></li>
 
@@ -49,28 +67,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 </ul>
 
+<div class="nav-buttons">
+
 <a
-class="buy"
-
 target="_blank"
+href="https://pump.fun/coin/CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump"
+class="buy-btn">
 
-href="https://pump.fun/coin/CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump">
-
-Buy Now
+Buy DZDT
 
 </a>
 
+</div>
+
+</div>
+
 </nav>
 
-<section class="hero">
+<!-- ================= HERO ================= -->
 
-<div class="left">
+<section class="hero" id="home">
 
-<span class="badge">
+<div class="container hero-grid">
 
-🇩🇿 Built For Algeria
+<div
+class="hero-left"
 
-</span>
+data-aos="fade-right">
+
+<div class="badge">
+
+🇩🇿 Algeria's Community Token
+
+</div>
 
 <h1>
 
@@ -78,29 +107,650 @@ The Future of
 
 <span>Digital Commerce</span>
 
+in Algeria
+
 </h1>
 
 <p>
 
-DZDT is Algeria's community-powered blockchain token designed to connect businesses,
-developers and consumers through secure payments,
-marketplace rewards and future Web3 innovation.
+DZDT is a blockchain utility token designed to empower
+secure payments,
+online marketplaces,
+community rewards,
+business incentives,
+and the future Web3 ecosystem in Algeria.
 
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
 <a
 
-class="primary"
-
 target="_blank"
 
-href="https://pump.fun/coin/CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump">
+href="https://pump.fun/coin/CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump"
 
-Buy DZDT
+class="primary-btn">
+
+Buy Now
 
 </a>
+
+<button
+
+onclick="copyContract()"
+
+class="secondary-btn">
+
+Copy Contract
+
+</button>
+
+</div>
+
+<div class="contract-box">
+
+<h4>
+
+Official Contract
+
+</h4>
+
+<p id="contract">
+
+CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump
+
+</p>
+
+</div>
+
+</div>
+
+<div
+
+class="hero-right"
+
+data-aos="zoom-in">
+
+<div class="coin-glow">
+
+<img src="logo.png">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="container stats-grid">
+
+<div
+class="stat-card"
+data-aos="fade-up">
+
+<i class="fa-solid fa-link"></i>
+
+<h3>Network</h3>
+
+<p>Solana</p>
+
+</div>
+
+<div
+class="stat-card"
+data-aos="fade-up"
+data-aos-delay="100">
+
+<i class="fa-solid fa-coins"></i>
+
+<h3>Token Type</h3>
+
+<p>Utility</p>
+
+</div>
+
+<div
+class="stat-card"
+data-aos="fade-up"
+data-aos-delay="200">
+
+<i class="fa-solid fa-earth-africa"></i>
+
+<h3>Country</h3>
+
+<p>Algeria</p>
+
+</div>
+
+<div
+class="stat-card"
+data-aos="fade-up"
+data-aos-delay="300">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>Community</h3>
+
+<p>Growing</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= PART 2 STARTS HERE ========= -->
+  <!-- ================= MARKET ================= -->
+
+<section id="market" class="market">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+
+<span>Live Market</span>
+
+<h2>Track DZDT Performance</h2>
+
+<p>
+Real-time market information will be available as the token grows.
+Once listed on DexScreener, this section can display live charts,
+price, liquidity, and trading volume.
+</p>
+
+</div>
+
+<div class="market-grid">
+
+<div class="chart-card" data-aos="fade-right">
+
+<div class="chart-header">
+
+<h3>
+<i class="fa-solid fa-chart-line"></i>
+Market Chart
+</h3>
+
+<a target="_blank"
+href="https://pump.fun/coin/CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump">
+
+View on Pump.fun
+
+</a>
+
+</div>
+
+<div class="chart-placeholder">
+
+<i class="fa-solid fa-chart-area"></i>
+
+<h3>Live Chart</h3>
+
+<p>
+
+DexScreener integration coming soon.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="market-info" data-aos="fade-left">
+
+<div class="info-card">
+
+<h4>Price</h4>
+
+<h2>--</h2>
+
+<span>Coming Soon</span>
+
+</div>
+
+<div class="info-card">
+
+<h4>Market Cap</h4>
+
+<h2>--</h2>
+
+<span>Coming Soon</span>
+
+</div>
+
+<div class="info-card">
+
+<h4>Liquidity</h4>
+
+<h2>--</h2>
+
+<span>Coming Soon</span>
+
+</div>
+
+<div class="info-card">
+
+<h4>24H Volume</h4>
+
+<h2>--</h2>
+
+<span>Coming Soon</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="container about-grid">
+
+<div class="about-image" data-aos="zoom-in">
+
+<img src="logo.png" alt="DZDT Logo">
+
+</div>
+
+<div class="about-content" data-aos="fade-left">
+
+<span class="section-subtitle">
+
+ABOUT DZDT
+
+</span>
+
+<h2>
+
+Building Algeria's Digital Economy
+
+</h2>
+
+<p>
+
+DZDT is more than a cryptocurrency.
+
+It is a community-driven utility token created to accelerate
+Algeria's digital transformation through blockchain technology.
+
+</p>
+
+<p>
+
+Our vision is to create a trusted ecosystem where individuals,
+businesses, developers, and entrepreneurs can benefit from
+secure digital payments, marketplace integration, transparent
+transactions, and innovative Web3 services.
+
+</p>
+
+<div class="about-features">
+
+<div>
+
+<i class="fa-solid fa-shield-halved"></i>
+
+Secure Payments
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-store"></i>
+
+Marketplace
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-gift"></i>
+
+Rewards
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-network-wired"></i>
+
+Blockchain
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TOKENOMICS ================= -->
+
+<section id="tokenomics">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+
+<span>Token Information</span>
+
+<h2>Tokenomics</h2>
+
+</div>
+
+<div class="tokenomics-grid">
+
+<div class="token-card" data-aos="zoom-in">
+
+<i class="fa-solid fa-layer-group"></i>
+
+<h3>Network</h3>
+
+<p>Solana</p>
+
+</div>
+
+<div class="token-card" data-aos="zoom-in" data-aos-delay="100">
+
+<i class="fa-solid fa-coins"></i>
+
+<h3>Symbol</h3>
+
+<p>DZDT</p>
+
+</div>
+
+<div class="token-card" data-aos="zoom-in" data-aos-delay="200">
+
+<i class="fa-solid fa-percent"></i>
+
+<h3>Tax</h3>
+
+<p>0%</p>
+
+</div>
+
+<div class="token-card" data-aos="zoom-in" data-aos-delay="300">
+
+<i class="fa-solid fa-handshake"></i>
+
+<h3>Ownership</h3>
+
+<p>Community</p>
+
+</div>
+
+<div class="token-card" data-aos="zoom-in" data-aos-delay="400">
+
+<i class="fa-solid fa-droplet"></i>
+
+<h3>Liquidity</h3>
+
+<p>Pump.fun</p>
+
+</div>
+
+<div class="token-card" data-aos="zoom-in" data-aos-delay="500">
+
+<i class="fa-solid fa-globe"></i>
+
+<h3>Mission</h3>
+
+<p>Digital Algeria</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========= PART 3 STARTS HERE ========= -->
+  <!-- ================= FAQ ================= -->
+
+<section id="faq">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+
+<span>Need Help?</span>
+
+<h2>Frequently Asked Questions</h2>
+
+<p>
+Everything you need to know about DZDT.
+</p>
+
+</div>
+
+<div class="faq-container">
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+What is DZDT?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+DZDT is a community-powered utility token built on the Solana blockchain to support Algeria's growing digital economy through blockchain technology.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+How do I buy DZDT?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+You can purchase DZDT through Pump.fun using a Solana-compatible wallet such as Phantom.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Which blockchain does DZDT use?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+DZDT is deployed on the Solana blockchain for fast transactions and low fees.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+What is the goal of DZDT?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+The project aims to encourage blockchain adoption in Algeria by supporting businesses, developers, entrepreneurs, and digital commerce.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= COMMUNITY ================= -->
+
+<section class="community">
+
+<div class="container">
+
+<div class="community-box" data-aos="zoom-in">
+
+<h2>
+
+Join the DZDT Community
+
+</h2>
+
+<p>
+
+Become part of Algeria's blockchain future.
+
+Follow our updates and help grow the ecosystem.
+
+</p>
+
+<div class="community-buttons">
+
+<a href="#">
+
+<i class="fab fa-telegram"></i>
+
+Telegram
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-x-twitter"></i>
+
+X (Twitter)
+
+</a>
+
+<a href="https://github.com/dzdt7/DZDt" target="_blank">
+
+<i class="fab fa-github"></i>
+
+GitHub
+
+</a>
+
+<a href="https://pump.fun/coin/CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump"
+target="_blank">
+
+<i class="fa-solid fa-coins"></i>
+
+Pump.fun
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<img src="logo.png" class="footer-logo">
+
+<h3>DZDT</h3>
+
+<p>
+
+Built for Algeria.
+
+Powered by Blockchain.
+
+</p>
+
+</div>
+
+<div>
+
+<h4>Navigation</h4>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#market">Market</a></li>
+
+<li><a href="#tokenomics">Tokenomics</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>Official Contract</h4>
+
+<p class="footer-contract">
+
+CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump
+
+</p>
 
 <button onclick="copyContract()">
 
@@ -110,220 +760,47 @@ Copy Contract
 
 </div>
 
-<div class="contract">
-
-CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump
-
 </div>
 
-</div>
+<div class="copyright">
 
-<div class="right">
-
-<div class="coin">
-
-<img src="logo.png">
-
-</div>
-
-</div>
-
-</section>
-
-<section class="stats">
-
-<div class="card">
-
-<h3>
-
-<i class="fa-solid fa-link"></i>
-
-Network
-
-</h3>
-
-<p>Solana</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-<i class="fa-solid fa-coins"></i>
-
-Type
-
-</h3>
-
-<p>Utility Token</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-<i class="fa-solid fa-location-dot"></i>
-
-Country
-
-</h3>
-
-<p>Algeria</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-
-<i class="fa-solid fa-users"></i>
-
-Community
-
-</h3>
-
-<p>Growing</p>
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h2>
-
-About DZDT
-
-</h2>
-
-<p>
-
-DZDT is a blockchain-powered utility token built to accelerate Algeria's digital transformation.
-Our goal is to support secure payments,
-local marketplaces,
-customer rewards,
-business incentives,
-and future Web3 services for individuals and companies.
-
-</p>
-
-</section>
-
-<section id="tokenomics">
-
-<h2>
-
-Tokenomics
-
-</h2>
-
-<div class="token-grid">
-
-<div>
-
-<h4>Network</h4>
-
-<span>Solana</span>
-
-</div>
-
-<div>
-
-<h4>Token</h4>
-
-<span>DZDT</span>
-
-</div>
-
-<div>
-
-<h4>Taxes</h4>
-
-<span>0%</span>
-
-</div>
-
-<div>
-
-<h4>Liquidity</h4>
-
-<span>Pump.fun</span>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="faq">
-
-<h2>
-
-Frequently Asked Questions
-
-</h2>
-
-<div class="faq">
-
-<div>
-
-<h3>What is DZDT?</h3>
-
-<p>A blockchain utility token for Algeria.</p>
-
-</div>
-
-<div>
-
-<h3>How do I buy?</h3>
-
-<p>Purchase it on Pump.fun using a Solana wallet.</p>
-
-</div>
-
-<div>
-
-<h3>Which network?</h3>
-
-<p>Solana.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<img src="logo.png">
-
-<h2>DZDT</h2>
-
-<p>
-
-Built For Algeria • Powered By Blockchain
-
-</p>
-
-<div class="socials">
-
-<a href="#"><i class="fab fa-x-twitter"></i></a>
-
-<a href="#"><i class="fab fa-telegram"></i></a>
-
-<a href="https://github.com/dzdt7/DZDt">
-
-<i class="fab fa-github"></i>
-
-</a>
+© 2026 DZDT. All Rights Reserved.
 
 </div>
 
 </footer>
 
+<!-- ================= SCRIPTS ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
 <script src="script.js"></script>
+
+<script>
+
+AOS.init({
+
+duration:900,
+
+once:true
+
+});
+
+function copyContract(){
+
+navigator.clipboard.writeText(
+
+"CiAHefHCYdNrj9ne9JrSDpNr684YKaH58p5b9HvBpump"
+
+);
+
+alert("Contract copied successfully!");
+
+}
+
+</script>
 
 </body>
 
