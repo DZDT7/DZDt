@@ -835,31 +835,51 @@ Hero
 
 .contract-box{
 
-    margin-top:35px;
+background:#101827;
 
-    background:rgba(255,255,255,.05);
+padding:35px;
 
-    border:1px solid rgba(255,255,255,.08);
+border-radius:20px;
 
-    border-radius:18px;
+text-align:center;
 
-    padding:25px;
+border:1px solid rgba(255,255,255,.08);
 
 }
 
 .contract-box h4{
 
-    color:#00ff88;
+color:#fff;
 
-    margin-bottom:10px;
+margin-bottom:20px;
+
+font-size:26px;
+
+}
+
+.qr-code{
+
+width:220px;
+
+height:220px;
+
+background:white;
+
+padding:12px;
+
+border-radius:18px;
+
+margin:25px auto;
+
+display:block;
 
 }
 
 .contract-box p{
 
-    font-size:15px;
+color:#b9c5d1;
 
-    word-break:break-all;
+margin-bottom:25px;
 
 }
 
